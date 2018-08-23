@@ -1,7 +1,8 @@
 # Notitia A8 - A Detailed Asphalt 8: Airborne Guide
 
-[![Download](https://img.shields.io/badge/Download-APK-blue.svg)](https://github.com/adnyey/Notitia-A8/releases/download/1.3/1.3.-.23.August.2018.apk)
+[![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://github.com/adnyey/Notitia-A8/releases/download/1.3/1.3.-.23.August.2018.apk)
 ![Size](https://img.shields.io/badge/Size-5.65%20MB-lightgrey.svg)
+[![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Supports **Deutsch, Español, bahasa Indonesia, Italiano, 日本語, 한국어, Português, Pусский, Türkçe, 简体中文.**
 
@@ -26,4 +27,4 @@ This application is developed and designed for educational purpose. App does not
 
 ## App Content Licence
 
-The app's content is licensed under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0): https://creativecommons.org/licenses/by-nc/4.0/
+The app's content is licensed under [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
