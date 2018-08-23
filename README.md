@@ -4,6 +4,9 @@
 ![Size](https://img.shields.io/badge/Size-5.65%20MB-lightgrey.svg)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
+![](images/N8_1.png)
+![](images/N8_2.png)
+
 Supports **Deutsch, Español, bahasa Indonesia, Italiano, 日本語, 한국어, Português, Pусский, Türkçe, 简体中文.**
 
 ## Features
