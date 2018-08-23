@@ -12,8 +12,8 @@ Supports **Deutsch, Español, bahasa Indonesia, Italiano, 日本語, 한국어, 
 * MAX, PRO, MAX+PRO, ELITE configuration for cars
 * Cars with engine cards requirements
 * Fastest route for each track
-* Level wise cost for max upgrades
-* Level wise cards required for pro upgrades
+* Per level cost for max upgrades
+* Per level cards required for pro upgrades
 * Game news
 * Option to switch between mph and kmph speed units
 * Mastery rewards of each car
