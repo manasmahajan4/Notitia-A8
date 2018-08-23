@@ -24,7 +24,6 @@ The product names and images shown or represented are copyright and/or trademark
 
 This application is developed and designed for educational purpose. App does not include Advertisements or In-App purchases or Micro-Transactions.
 
-
 ## App Content Licence
 
 The app's content is licensed under [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
