@@ -1,5 +1,8 @@
 # Notitia-A8
 
+Download APk from Releases here: https://github.com/adnyey/Notitia-A8/releases
+or Direct Download the latest version from here: https://github.com/adnyey/Notitia-A8/releases/download/1.3/1.3.-.23.August.2018.apk
+
 Supports Deutsch, Español, bahasa Indonesia, Italiano, 日本語, 한국어, Português, Pусский, Türkçe, 简体中文.
 
 This game guide provides you the information about each car and it's upgrades in Asphalt 8: Airborne.
