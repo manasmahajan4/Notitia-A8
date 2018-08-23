@@ -27,6 +27,8 @@ Get the best times in events with the fastest route videos.
 * Option to switch between mph and kmph speed units
 * Mastery rewards of each car
 
+## Disclaimer
+
 The product names and images shown or represented are copyright and/or trademark of theirs respective copyright and/or trademark holders, which are in no way associated or affiliated with this application. Use of these names does not imply any co-operation or endorsement.
 
 This application is developed and designed for educational purpose. App does not include Advertisements or In-App purchases or Micro-Transactions.
