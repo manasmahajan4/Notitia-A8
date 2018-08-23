@@ -15,7 +15,7 @@ Plan your purchases using the best companion app for the game.
 
 Get the best times in events with the fastest route videos.
 
-The app includes following features:
+## Features
 
 * Performance statistics (Top speed, Nitro, Handling etc)
 * MAX, PRO, MAX+PRO, ELITE configuration for cars
@@ -29,6 +29,9 @@ The app includes following features:
 
 The product names and images shown or represented are copyright and/or trademark of theirs respective copyright and/or trademark holders, which are in no way associated or affiliated with this application. Use of these names does not imply any co-operation or endorsement.
 
-The app's content is licensed under Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
-
 This application is developed and designed for educational purpose. App does not include Advertisements or In-App purchases or Micro-Transactions.
+
+
+## App Content Licence
+
+The app's content is licensed under Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
