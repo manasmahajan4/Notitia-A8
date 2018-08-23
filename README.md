@@ -1,7 +1,6 @@
 # Notitia A8 - A Detailed Asphalt 8: Airborne Guide
 
-Download APk from Releases here: https://github.com/adnyey/Notitia-A8/releases
-or Direct Download the latest version from here: https://github.com/adnyey/Notitia-A8/releases/download/1.3/1.3.-.23.August.2018.apk
+[![Download](https://img.shields.io/badge/Download-APK-blue.svg)](https://github.com/adnyey/Notitia-A8/releases/download/1.3/1.3.-.23.August.2018.apk)
 
 Supports **Deutsch, Español, bahasa Indonesia, Italiano, 日本語, 한국어, Português, Pусский, Türkçe, 简体中文.**
 
