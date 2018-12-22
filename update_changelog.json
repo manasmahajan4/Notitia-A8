@@ -1,8 +1,9 @@
 {
-  "latestVersion": "1.5",
-  "latestVersionCode": "67",
-  "url": "https://www.dropbox.com/s/zdmwf66drcf7wff/Notitia_A8_1.5.apk?dl=0",
+  "latestVersion": "1.6",
+  "latestVersionCode": "68",
+  "url": "https://www.dropbox.com/s/we9ryxpd8y950al/Notitia_A8_1.6.apk?dl=0",
   "releaseNotes": [
-    "- Added update 4.0 vehicles"
+    "- Corrected Vision GT token upgrade",
+    "- Completed info of all new vehicles"
   ]
 }
