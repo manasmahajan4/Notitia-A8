@@ -1,9 +1,9 @@
 {
-  "latestVersion": "1.6",
-  "latestVersionCode": "68",
-  "url": "https://www.dropbox.com/s/we9ryxpd8y950al/Notitia_A8_1.6.apk?dl=0",
+  "latestVersion": "1.7",
+  "latestVersionCode": "69",
+  "url": "https://www.dropbox.com/s/9ip0dkonl7xljj0/Notitia_A8_1.7.apk?dl=0",
   "releaseNotes": [
-    "- Corrected Vision GT token upgrade",
-    "- Completed info of all new vehicles"
+    "- Added Sagaris Special Edition",
+    "- Updated older images"
   ]
 }
