@@ -1,8 +1,10 @@
 {
-  "latestVersion": "1.8",
-  "latestVersionCode": "70",
-  "url": "https://www.dropbox.com/s/iri199z4sqjeroe/Notitia_A8_1.8.apk?dl=0",
+  "latestVersion": "1.9",
+  "latestVersionCode": "71",
+  "url": "https://www.dropbox.com/s/029pnenh8djzw3f/Notitia_A8_1.9.apk?dl=0",
   "releaseNotes": [
-    "- Added cars from 4.1.x update"
+    "- Updated new ranks of all 253 cars",
+    "- Updated new mastery rewards of 253 cars",
+    "- Added new 4.2.x cars"
   ]
 }
