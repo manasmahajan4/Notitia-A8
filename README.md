@@ -1,6 +1,6 @@
 # Notitia A8 - A Detailed Asphalt 8: Airborne Guide
 
-[![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://www.dropbox.com/s/iri199z4sqjeroe/Notitia_A8_1.8.apk?dl=1)
+[![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://www.dropbox.com/s/029pnenh8djzw3f/Notitia_A8_1.9.apk?dl=1)
 ![Size](https://img.shields.io/badge/Size-6.00%20MB-lightgrey.svg)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
