@@ -1,8 +1,9 @@
 {
-  "latestVersion": "1.10",
-  "latestVersionCode": "72",
-  "url": "https://www.dropbox.com/s/a80rtt3t48966sh/Notitia_A8_1.10.apk?dl=0",
+  "latestVersion": "1.11",
+  "latestVersionCode": "73",
+  "url": "https://www.dropbox.com/s/02qvq2hp3ep47j3/Notitia_A8_1.11.apk?dl=0",
   "releaseNotes": [
-    "- Added new 4.5.x cars"
+    "- Added new 4.6.x cars",
+    "- Added a Asphalt Apps discord server link in about section"
   ]
 }
