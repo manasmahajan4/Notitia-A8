@@ -3,7 +3,7 @@
 [![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://www.dropbox.com/s/a80rtt3t48966sh/Notitia_A8_1.10.apk?dl=1)
 ![Size](https://img.shields.io/badge/Size-6.00%20MB-lightgrey.svg)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Discord](https://img.shields.io/badge/Discord-Join-blue.svg)](https://discord.gg/TqZsx5x)
+[![Discord](https://img.shields.io/badge/Discord-Join-blue.svg)](https://discord.gg/aEhap7P)
 
 ![](images/N8_1.png)
 ![](images/N8_2.png)
