@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Gameplay">
+        <menu>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/car"
+            android:title="All Cars"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/fast"
+            android:title="Fastest Route"
+            android:checkable="true"
+            />
+        </menu>
+    </item>
+
+    <item android:title="Pro Cards">
+        <menu>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/kitbox"
+            android:title="All Boxes"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/eng"
+            android:icon="@drawable/pist"
+            android:title="Engine Cards"
+            android:checkable="true"
+            />
+        </menu>
+    </item>
+
+    <item android:title="Events">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/on"
+                android:title="Ongoing Events"
+                />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/fu"
+                android:title="Future Events"
+                />
+        </menu>
+    </item>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/dev_name"
+                android:icon="@drawable/dev"
+                android:title="About"
+                />
+        </menu>
+    </item>
+
+</menu>

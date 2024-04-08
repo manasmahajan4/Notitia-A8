@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:id="@+id/help_compare_box"
+    card_view:cardBackgroundColor="@android:color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textAllCaps="true"
+            android:layout_marginBottom="2dp"
+            android:text="@string/symbols"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_mast"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_mastery"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_rnd"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_rnd"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_champ"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_race"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_edd"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_edd"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_vip"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_vip"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/tic_mp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_mp"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:background="#B4536DFE"
+                android:src="@drawable/pro_holder"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_elite"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:background="#B4F44336"
+                android:src="@drawable/pro_holder"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/car_champ"
+                android:textColor="#212121"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyPlainbutton"
+            android:id="@+id/help_compare"
+            android:layout_gravity="right"
+            android:text="ok"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

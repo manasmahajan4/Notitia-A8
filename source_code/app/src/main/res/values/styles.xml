@@ -1,0 +1,49 @@
+<resources>
+
+    <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">#465c67</item>
+        <item name="android:statusBarColor">#2A3EAC</item>
+    </style>
+
+    <style name="LoadingTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="MyPlainbutton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="MyNakedButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@color/transparent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+</resources>

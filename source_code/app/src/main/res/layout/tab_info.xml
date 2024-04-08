@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/statsInfo" layout="@layout/bar_normal" />
+    <!--<TextView
+        android:id="@+id/spdModi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed Modifier" />
+
+    <TextView
+        android:id="@+id/engine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Engine" />
+
+    <TextView
+        android:id="@+id/carWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rd/EDD/Chp/Mast/VIP" />-->
+</LinearLayout>

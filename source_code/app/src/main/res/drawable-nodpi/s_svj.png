@@ -1,0 +1,233 @@
+getWidth() * taskView.getScaleX()),
+                (int) (viewY + taskView.getHeight() * taskView.getScaleY()));
+    }
+
+    public final void onBusEvent(DraggingInRecentsEvent event) {
+        if (mTaskStackView.getTaskViews().size() > 0) {
+            setTranslationY(event.distanceFromTop - mTaskStackView.getTaskViews().get(0).getY());
+        }
+    }
+
+    public final void onBusEvent(DraggingInRecentsEndedEvent event) {
+        ViewPropertyAnimator animator = animate();
+        if (event.velocity > mFlingAnimationUtils.getMinVelocityPxPerSecond()) {
+            animator.translationY(getHeight());
+            animator.withEndAction(new Runnable() {
+                @Override
+                public void run() {
+                    WindowManagerProxy.getInstance().maximizeDockedStack();
+                }
+            });
+            mFlingAnimationUtils.apply(animator, getTranslationY(), getHeight(), event.velocity);
+        } else {
+            animator.translationY(0f);
+            animator.setListener(null);
+            mFlingAnimationUtils.apply(animator, getTranslationY(), 0, event.velocity);
+        }
+        animator.start();
+    }
+
+    public final void onBusEvent(EnterRecentsWindowAnimationCompletedEvent event) {
+        RecentsActivityLaunchState launchState = LegacyRecentsImpl.getConfiguration().getLaunchState();
+        if (!launchState.launchedViaDockGesture && !launchState.launchedFromApp
+                && getStack().getTaskCount() > 0) {
+            animateBackgroundScrim(getOpaqueScrimAlpha(),
+                    TaskStackAnimationHelper.ENTER_FROM_HOME_TRANSLATION_DURATION);
+        }
+    }
+
+    public final void onBusEvent(AllTaskViewsDismissedEvent event) {
+        EventBus.getDefault().send(new HideStackActionButtonEvent());
+    }
+
+    public final void onBusEvent(DismissAllTaskViewsEvent event) {
+        SystemServicesProxy ssp = LegacyRecentsImpl.getSystemServices();
+        if (!ssp.hasDockedTask()) {
+            // Animate the background away only if we are dismissing Recents to home
+            animateBackgroundScrim(0f, DEFAULT_UPDATE_SCRIM_DURATION);
+        }
+    }
+
+    public final void onBusEvent(ShowStackActionButtonEvent event) {
+        showStackActionButton(SHOW_STACK_ACTION_BUTTON_DURATION, event.translate);
+    }
+
+    public final void onBusEvent(HideStackActionButtonEvent event) {
+        hideStackActionButton(HIDE_STACK_ACTION_BUTTON_DURATION, true /* translate */);
+    }
+
+    public final void onBusEvent(MultiWindowStateChangedEvent event) {
+        updateStack(event.stack, false /* setStackViewTasks */);
+    }
+
+    public final void onBusEvent(ShowEmptyViewEvent event) {
+        showEmptyView(R.string.recents_empty_message);
+    }
+
+    /**
+     * Shows the stack action button.
+     */
+    private void showStackActionButton(final int duration, final boolean translate) {
+        final ReferenceCountedTrigger postAnimationTrigger = new ReferenceCountedTrigger();
+        if (mStackActionButton.getVisibility() == View.INVISIBLE) {
+            mStackActionButton.setVisibility(View.VISIBLE);
+            mStackActionButton.setAlpha(0f);
+            if (translate) {
+                mStackActionButton.setTranslationY(mStackActionButton.getMeasuredHeight() *
+                        (LegacyRecentsImpl.getConfiguration().isLowRamDevice ? 1 : -0.25f));
+            } else {
+                mStackActionButton.setTranslationY(0f);
+            }
+            postAnimationTrigger.addLastDecrementRunnable(new Runnable() {
+                @Override
+                public void run() {
+                    if (translate) {
+                        mStackActionButton.animate()
+                            .translationY(0f);
+                    }
+                    mStackActionButton.animate()
+                            .alpha(1f)
+                            .setDuration(duration)
+                            .setInterpolator(Interpolators.FAST_OUT_SLOW_IN)
+                            .start();
+                }
+            });
+        }
+        postAnimationTrigger.flushLastDecrementRunnables();
+    }
+
+    /**
+     * Hides the stack action button.
+     */
+    private void hideStackActionButton(int duration, boolean translate) {
+        final ReferenceCountedTrigger postAnimationTrigger = new ReferenceCountedTrigger();
+        hideStackActionButton(duration, translate, postAnimationTrigger);
+        postAnimationTrigger.flushLastDecrementRunnables();
+    }
+
+    /**
+     * Hides the stack action button.
+     */
+    private void hideStackActionButton(int duration, boolean translate,
+                                       final ReferenceCountedTrigger postAnimationTrigger) {
+        if (mStackActionButton.getVisibility() == View.VISIBLE) {
+            if (translate) {
+                mStackActionButton.animate().translationY(mStackActionButton.getMeasuredHeight()
+                        * (LegacyRecentsImpl.getConfiguration().isLowRamDevice ? 1 : -0.25f));
+            }
+            mStackActionButton.animate()
+                    .alpha(0f)
+                    .setDuration(duration)
+                    .setInterpolator(Interpolators.FAST_OUT_SLOW_IN)
+                    .withEndAction(new Runnable() {
+                        @Override
+                        public void run() {
+                            mStackActionButton.setVisibility(View.INVISIBLE);
+                            postAnimationTrigger.decrement();
+                        }
+                    })
+                    .start();
+            postAnimationTrigger.increment();
+        }
+    }
+
+    /**
+     * Animates a translation in the Y direction and fades in/out for empty view to show or hide it.
+     * @param show whether to translate up and fade in the empty view to the center of the screen
+     * @param postAnimationTrigger to keep track of the animation
+     */
+    private void animateEmptyView(boolean show, ReferenceCountedTrigger postAnimationTrigger) {
+        float start = mTaskStackView.getStackAlgorithm().getTaskRect().height() / 4;
+        mEmptyView.setTranslationY(show ? start : 0);
+        mEmptyView.setAlpha(show ? 0f : 1f);
+        ViewPropertyAnimator animator = mEmptyView.animate()
+                .setDuration(150)
+                .setInterpolator(Interpolators.FAST_OUT_SLOW_IN)
+                .translationY(show ? 0 : start)
+                .alpha(show ? 1f : 0f);
+
+        if (postAnimationTrigger != null) {
+            animator.setListener(postAnimationTrigger.decrementOnAnimationEnd());
+            postAnimationTrigger.increment();
+        }
+        animator.start();
+    }
+
+    /**
+     * Updates the dock region to match the specified dock state.
+     */
+    private void updateVisibleDockRegions(DockState[] newDockStates,
+            boolean isDefaultDockState, int overrideAreaAlpha, int overrideHintAlpha,
+            boolean animateAlpha, boolean animateBounds) {
+        ArraySet<DockState> newDockStatesSet = Utilities.arrayToSet(newDockStates,
+                new ArraySet<DockState>());
+        ArrayList<DockState> visDockStates = mTouchHandler.getVisibleDockStates();
+        for (int i = visDockStates.size() - 1; i >= 0; i--) {
+            DockState dockState = visDockStates.get(i);
+            DockState.ViewState viewState = dockState.viewState;
+            if (newDockStates == null || !newDockStatesSet.contains(dockState)) {
+                // This is no longer visible, so hide it
+                viewState.startAnimation(null, 0, 0, TaskStackView.SLOW_SYNC_STACK_DURATION,
+                        Interpolators.FAST_OUT_SLOW_IN, animateAlpha, animateBounds);
+            } else {
+                // This state is now visible, update the bounds and show it
+                int areaAlpha = overrideAreaAlpha != -1
+                        ? overrideAreaAlpha
+                        : viewState.dockAreaAlpha;
+                int hintAlpha = overrideHintAlpha != -1
+                        ? overrideHintAlpha
+                        : viewState.hintTextAlpha;
+                Rect bounds = isDefaultDockState
+                        ? dockState.getPreDockedBounds(getMeasuredWidth(), getMeasuredHeight(),
+                                mSystemInsets)
+                        : dockState.getDockedBounds(getMeasuredWidth(), getMeasuredHeight(),
+                                mDividerSize, mSystemInsets, getResources());
+                if (viewState.dockAreaOverlay.getCallback() != this) {
+                    viewState.dockAreaOverlay.setCallback(this);
+                    viewState.dockAreaOverlay.setBounds(bounds);
+                }
+                viewState.startAnimation(bounds, areaAlpha, hintAlpha,
+                        TaskStackView.SLOW_SYNC_STACK_DURATION, Interpolators.FAST_OUT_SLOW_IN,
+                        animateAlpha, animateBounds);
+            }
+        }
+    }
+
+    /**
+     * Scrim alpha based on how busy recents is:
+     * Scrim will be {@link ScrimController#GRADIENT_SCRIM_ALPHA} when the stack is empty,
+     * and {@link ScrimController#GRADIENT_SCRIM_ALPHA_BUSY} when it's full.
+     *
+     * @return Alpha from 0 to 1.
+     */
+    private float getOpaqueScrimAlpha() {
+        return MathUtils.map(0, 1, ScrimController.GRADIENT_SCRIM_ALPHA,
+                ScrimController.GRADIENT_SCRIM_ALPHA_BUSY, mBusynessFactor);
+    }
+
+    /**
+     * Animates the background scrim to the given {@param alpha}.
+     */
+    private void animateBackgroundScrim(float alpha, int duration) {
+        Utilities.cancelAnimationWithoutCallbacks(mBackgroundScrimAnimator);
+        // Calculate the absolute alpha to animate from
+        final int fromAlpha = mBackgroundScrim.getAlpha();
+        final int toAlpha = (int) (alpha * 255);
+        mBackgroundScrimAnimator = ValueAnimator.ofInt(fromAlpha, toAlpha);
+        mBackgroundScrimAnimator.setDuration(duration);
+        mBackgroundScrimAnimator.setInterpolator(toAlpha > fromAlpha
+                ? Interpolators.ALPHA_IN
+                : Interpolators.ALPHA_OUT);
+        mBackgroundScrimAnimator.addUpdateListener(mUpdateBackgroundScrimAlpha);
+        mBackgroundScrimAnimator.start();
+    }
+
+    /**
+     * @return the bounds of the stack action button.
+     */
+    Rect getStackActionButtonBoundsFromStackLayout() {
+        Rect actionButtonRect = new Rect(
+                mTaskStackView.mLayoutAlgorithm.getStackActionButtonRect());
+        int left, top;
+        if (LegacyRecentsImpl.getConfiguration().isLowRamDevice) {
+            Rect windowRect = LegacyRecentsImpl.getSystemServices().getWindowRect();

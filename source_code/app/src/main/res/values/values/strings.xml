@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">A8 Guide</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_settings">Settings</string>
+    <string name="apache">Copyright © 2007-2016, The Android Open Source Project\n\nLicensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0
+\n\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</string>
+    <string name="trco">All product names shown or represented are copyright and/or trademark of theirs respective trademark holders, which are in no way associated or affiliated with this application and its developer Manas M (Adnyey). Use of these names does not imply any co-operation or endorsement.\n\nThis app is developed and designed solely for non-profit educational purpose.</string>
+</resources>

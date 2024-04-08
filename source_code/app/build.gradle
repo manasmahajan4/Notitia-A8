@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "adnyey.notitia.a8"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 74
+        versionName "1.12"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+    implementation 'com.codewaves.stickyheadergrid:stickyheadergrid:0.9.5'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+}

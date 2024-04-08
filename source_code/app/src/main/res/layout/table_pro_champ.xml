@@ -1,0 +1,2885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lblack">
+
+                    <TableRow android:background="@color/colorAccent">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/ups_tires" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="2"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/ups_susp" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="3"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/ups_drive" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="4"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/ups_exha" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder" />
+
+                            <TextView
+                                android:id="@+id/partNumt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder" />
+
+                            <TextView
+                                android:id="@+id/engNumt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder" />
+
+                            <TextView
+                                android:id="@+id/techNumt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge1"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge2"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge3"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge4"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge5"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge6"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge7"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge8"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge9"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="10sp"
+                            android:gravity="center"
+                            android:text="@string/level_10" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgt10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumt10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgt10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumt10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgt10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumt10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricet10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgs10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNums10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgs10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNums10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgs10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNums10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPrices10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImgd10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNumd10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImgd10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNumd10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImgd10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNumd10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPriced10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#99000000"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/partImge10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/partNume10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/engImge10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/engNume10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <ImageView
+                                android:id="@+id/techImge10"
+                                android:layout_width="50dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/pro_holder"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/techNume10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="X1" />
+
+                            <TextView
+                                android:id="@+id/proPricee10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textColor="@color/credits" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

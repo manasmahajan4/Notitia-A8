@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_a_cost"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Big car 1 name here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/cost_a_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.9"
+                android:background="#99000000"
+                android:gravity="center">
+
+                <ImageView
+                    app:srcCompat="@drawable/a8c"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_a_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/cost_at_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.9"
+                android:background="#99000000"
+                android:gravity="center">
+
+                <ImageView
+                    app:srcCompat="@drawable/a8c"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_at_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+
+                <ImageView
+                    app:srcCompat="@drawable/a8t"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_att_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_b_cost"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Big car 1 name here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/cost_b_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.9"
+                android:background="#99000000"
+                android:gravity="center">
+
+                <ImageView
+                    app:srcCompat="@drawable/a8c"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_b_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/cost_bt_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.9"
+                android:background="#99000000"
+                android:gravity="center">
+
+                <ImageView
+                    app:srcCompat="@drawable/a8c"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_bt_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+
+                <ImageView
+                    app:srcCompat="@drawable/a8t"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/cost_btt_row_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+        </LinearLayout>
+</LinearLayout>

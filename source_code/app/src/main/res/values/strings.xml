@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name" translatable="false">Notitia A8</string>
+<string name="licencingKeyIAP" translatable="false"></string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="home_bottom_banner" translatable="false">ca-app-pub-4471823916819473/2154834145</string>
+    <string name="apache" translatable="false">Copyright © 2007-2017, The Android Open Source Project\n\nLicensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0
+\n\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</string>
+
+    <string name="chartlic" translatable="false">Copyright 2016 Philipp Jahoda\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="trco" translatable="false">All product names and images shown or represented are copyright and/or trademark of theirs respective copyright and/or trademark holders, which are in no way associated or affiliated with this application. Use of these names does not imply any co-operation or endorsement.\n\nThis app is developed and designed for educational purpose.</string>
+    <string name="glide_lic" translatable="false">License for everything not in third_party and not otherwise marked:\n\nCopyright 2014 Google, Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are\npermitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice, this list of\n         conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice, this list\n         of conditions and the following disclaimer in the documentation and/or other materials\n         provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY GOOGLE, INC. ``AS IS\'\' AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GOOGLE, INC. OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the\nauthors and should not be interpreted as representing official policies, either expressed\nor implied, of Google, Inc.\n---------------------------------------------------------------------------------------------\nLicense for third_party/disklrucache:\n\nCopyright 2012 Jake Wharton\nCopyright 2011 The Android Open Source Project\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n   http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n---------------------------------------------------------------------------------------------\nLicense for third_party/gif_decoder:\n\nCopyright © 2013 Xcellent Creations, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n---------------------------------------------------------------------------------------------\nLicense for third_party/gif_encoder/AnimatedGifEncoder.java and\nthird_party/gif_encoder/LZWEncoder.java:\n\nNo copyright asserted on the source code of this class. May be used for any\npurpose, however, refer to the Unisys LZW patent for restrictions on use of\nthe associated LZWEncoder class. Please forward any corrections to\nkweiner@fmsware.com.\n\n-----------------------------------------------------------------------------\nLicense for third_party/gif_encoder/NeuQuant.java\n\nCopyright © 1994 Anthony Dekker\n\nNEUQUANT Neural-Net quantization algorithm by Anthony Dekker, 1994. See\n\"Kohonen neural networks for optimal colour quantization\" in \"Network:\nComputation in Neural Systems\" Vol. 5 (1994) pp 351-367. for a discussion of\nthe algorithm.\n\nAny party obtaining a copy of these files from the author, directly or\nindirectly, is granted, free of charge, a full and unrestricted irrevocable,\nworld-wide, paid up, royalty-free, nonexclusive right and license to deal in\nthis software and documentation files (the \"Software\"), including without\nlimitation the rights to use, copy, modify, merge, publish, distribute,\nsublicense, and/or sell copies of the Software, and to permit persons who\nreceive copies from any such party to do so, with the only requirement being\nthat this copyright notice remain intact.</string>
+    <string name="dev_design" translatable="false">Developer and Designer</string>
+    <string name="dev_name" translatable="false">Manas Mahajan</string>
+    <string name="dev_cmpny" translatable="false">Adnyey</string>
+    <string name="version">Version</string>
+    <string name="mail_id" translatable="false">adnyey.mail@gmail.com</string>
+    <string name="class_d">CLASS D</string>
+    <string name="class_c">CLASS C</string>
+    <string name="class_b">CLASS B</string>
+    <string name="class_a">CLASS A</string>
+    <string name="class_s">CLASS S</string>
+    <string name="cars_info">Cars Information</string>
+    <string name="symbols">Symbols</string>
+    <string name="car_mastery">Mastery Car</string>
+    <string name="car_rnd">R&amp;D Car</string>
+    <string name="car_champ">Championship Car</string>
+    <string name="car_edd">EDD Car</string>
+    <string name="car_race">Race Car</string>
+    <string name="car_elite" translatable="false">ELITE</string>
+    <string name="car_vip">VIP Car</string>
+    <string name="car_mp">Multiplayer League Reward</string>
+    <string name="real_speed">Only Real Speeds</string>
+    <string name="stats_ts">Total Speed</string>
+    <string name="stats_accel">Acceleration</string>
+    <string name="stats_han">Handling</string>
+    <string name="stats_nitro">Nitro</string>
+    <string name="stats_top">Top Speed</string>
+    <string name="but_next" translatable="false">❯</string>
+    <string name="level">Level</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="level_4">Level 4</string>
+    <string name="level_5">Level 5</string>
+    <string name="ad_tables" translatable="false"></string>
+    <string name="ad_top" translatable="false"></string>
+    <string name="level_6">Level 6</string>
+    <string name="level_7">Level 7</string>
+    <string name="level_8">Level 8</string>
+    <string name="level_9">Level 9</string>
+    <string name="level_10">Level 10</string>
+    <string name="ups_tires">Tires</string>
+    <string name="ups_susp">Suspension</string>
+    <string name="ups_drive">Drivetrain</string>
+    <string name="ups_exha">Exhaust</string>
+    <string name="stats_rank">Rank</string>
+    <string name="ups_stock">Stock</string>
+    <string name="stats_tk">Tuning Kit</string>
+    <string name="info_about">About</string>
+    <string name="info_lic">Licenses</string>
+    <string name="info_spth">Special Thanks</string>
+    <string name="info_dis">Disclaimer</string>
+    <string name="diag_selc">Select Car</string>
+    <string name="but_dis">Display Speed</string>
+    <string name="stats_perf">Performance</string>
+    <string name="stats_ups">Upgrades</string>
+    <string name="unit_kmph">KM/H</string>
+    <string name="unit_mph">MPH</string>
+    <string name="notif_internet">Internet Connection Required!</string>
+    <string name="notif_load">Loading</string>
+    <string name="menu_cars">Vehicles</string>
+    <string name="menu_fast">Fastest Route</string>
+    <string name="menu_news">Game News</string>
+    <string name="menu_engine">Engine Cards</string>
+    <string name="menu_custo">Customize</string>
+    <string name="menu_cmp">Compare Vehicles</string>
+    <string name="menu_help">Help</string>
+    <string name="notif_exit">Press again to exit</string>
+    <string name="tab_updates">Updates</string>
+    <string name="menu_more">More</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_rate">Rate the app</string>
+    <string name="but_prev" translatable="false">❮</string>
+    <string name="but_real">Real Speed</string>
+    <string name="display_format">Display Format</string>
+    <string name="normal_cars">Normal Cars</string>
+    <string name="please_type">Please type in English</string>
+    <string name="current">English</string>
+    <string name="select_language">Select Language</string>
+    <string name="total_upgrades">Total Upgrades Cost</string>
+    <string name="pro_cards">PRO Cards</string>
+    <string name="testingID" translatable="false">877BC16606819931B90257C4109FC14F</string>
+    <string name="advert">Remove Ads</string>
+    <string name="launch_error">Cannot find A8!</string>
+    <string name="donate">Donate</string>
+    <string name="patron">Become a Patron</string>
+    <string name="more_apps">My Other Apps</string>
+    <string name="update">Check for Update</string>
+</resources>

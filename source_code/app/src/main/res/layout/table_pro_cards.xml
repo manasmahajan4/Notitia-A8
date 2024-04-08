@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:scrollbars="none"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPart"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/part_a" />
+
+            <ImageView
+                android:id="@+id/imgTechInitial"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_initial" />
+
+            <ImageView
+                android:id="@+id/imgTechEarly"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_early" />
+
+            <ImageView
+                android:id="@+id/imgTechComm"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_bk_com" />
+
+            <ImageView
+                android:id="@+id/imgTechPro"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_bk_mid" />
+
+            <ImageView
+                android:id="@+id/imgTechMid"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_mid" />
+
+            <ImageView
+                android:id="@+id/imgTechLeg"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_bk_adv" />
+
+            <ImageView
+                android:id="@+id/imgTechAdv"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/tech_adv" />
+
+
+            <ImageView
+                android:id="@+id/imgEng"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:src="@drawable/eng_electric" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/numPart"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/numTechInitial"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/numTechEarly"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/numTechComm"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/numTechPro"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/numTechMid"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/numTechLeg"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/numTechAdv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/numEng"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="6" />
+        </TableRow>
+
+    </TableLayout>
+</HorizontalScrollView>

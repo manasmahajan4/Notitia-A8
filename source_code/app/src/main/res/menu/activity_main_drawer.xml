@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Game">
+        <menu>
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/car"
+                android:title="@string/menu_cars"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/fast"
+                android:title="@string/menu_fast"
+                android:checkable="true"
+                />
+            <!--<item
+                android:id="@+id/nav_cmp"
+                android:icon="@drawable/cmp"
+                android:title="@string/menu_cmp"
+                android:checkable="true"
+                />-->
+            <item
+                android:id="@+id/eng"
+                android:icon="@drawable/pist"
+                android:title="@string/menu_engine"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/news"
+                android:icon="@drawable/news"
+                android:title="@string/menu_news"
+                />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_more">
+        <menu>
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/qu"
+                android:title="@string/menu_help"
+                />
+            <item
+                android:id="@+id/pref"
+                android:icon="@drawable/wrench"
+                android:title="@string/menu_custo"
+                />
+            <item
+                android:id="@+id/mail_me"
+                android:icon="@drawable/contatc"
+                android:title="@string/menu_contact"
+                />
+            <item
+                android:id="@+id/donate"
+                android:icon="@drawable/heart"
+                android:title="@string/donate"
+                />
+            <item
+                android:id="@+id/dev_name"
+                android:icon="@drawable/information"
+                android:title="@string/info_about"
+                />
+        </menu>
+    </item>
+
+    <item android:title="@string/more_apps">
+        <menu>
+            <item
+                android:id="@+id/a8tuner"
+                android:icon="@drawable/a8tuner"
+                android:title="A8 Tuner"
+                />
+            <item
+                android:id="@+id/a9dex"
+                android:icon="@drawable/a9dex"
+                android:title="A9Dex"
+                />
+
+        </menu>
+    </item>
+
+</menu>
